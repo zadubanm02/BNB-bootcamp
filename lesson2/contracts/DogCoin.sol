@@ -21,7 +21,7 @@ contract DogCoin {
     }
 
     event SupplyChanged(uint256);
-    event TokenTransfer(address, address, uint256);
+    event TokenTransfer(address, address indexed, uint256);
 
     modifier onlyOwner {
         require(msg.sender == owner, "Only owner can perform this action");

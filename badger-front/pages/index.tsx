@@ -32,15 +32,28 @@ export default function Home() {
 
   return (
     <>
-      <main className="h-screen flex flex-col justify-center items-center align-middle bg-gradient-to-r from-cyan-100 to-blue-100">
-        <h1 className="text-3xl font-bold">BadgerCoin</h1>
-        <input className="p-2 rounded-md" />
-        <button
-          onClick={() => getSymbol()}
-          className="p-2 rounded-md bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100 m-5"
-        >
-          Interact
-        </button>
+      <main className="h-screen flex flex-col justify-center items-center align-middle bg-[#1A1C1F]">
+        <div className="flex flex-col text-center w-full mb-20">
+          <h2 className="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">
+            Financial freedom
+          </h2>
+          <h1 className="text-white sm:text-3xl text-2xl font-medium title-font mb-4">
+            Badger Coin
+          </h1>
+          <p className="text-gray-400 lg:w-2/3 mx-auto leading-relaxed text-base">
+            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+            gentrify, subway tile poke farm-to-table. Franzen you probably
+            haven't heard of them man bun deep jianbing selfies heirloom prism
+            food truck ugh squid celiac humblebrag.
+          </p>
+        </div>
+        <div
+          className="w-96 h-96 rounded-lg backdrop-blur-lg
+               [ p-8 md:p-10 lg:p-10 ]
+               [ bg-gradient-to-b from-white/60 to-white/40 ]
+               [ border-[1px] border-solid border-white border-opacity-30 ]
+               [ shadow-black/70 shadow-2xl "
+        ></div>
       </main>
     </>
   );

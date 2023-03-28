@@ -49,11 +49,38 @@ export default function Home() {
         </div>
         <div
           className="w-96 h-96 rounded-lg backdrop-blur-lg
-               [ p-8 md:p-10 lg:p-10 ]
+               [ p-4 md:p-10 lg:p-10 ]
                [ bg-gradient-to-b from-white/60 to-white/40 ]
                [ border-[1px] border-solid border-white border-opacity-30 ]
                [ shadow-black/70 shadow-2xl "
-        ></div>
+        >
+          <h2 className="text-center text-2xl font-bold">Transfer BC</h2>
+          <div className="relative flex-grow w-full mt-2">
+            <label htmlFor="email" className="leading-7 text-sm text-gray-600">
+              Amount
+            </label>
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+              className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300  focus:ring-2  text-base outline-none text-gray-700 py-1 px-3 leading-8 "
+            />
+          </div>
+          <div className="relative flex-grow w-full mt-5">
+            <label htmlFor="email" className="leading-7  text-sm text-gray-600">
+              Address To
+            </label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2  text-base outline-none text-gray-700 py-1 px-3 leading-8 "
+            />
+          </div>
+          <button className="my-10 flex justify-self-center text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded-lg text-lg">
+            Send
+          </button>
+        </div>
       </main>
     </>
   );
